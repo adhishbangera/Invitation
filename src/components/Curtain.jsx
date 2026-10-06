@@ -57,10 +57,10 @@ export default function CurtainScreen() {
       <div style={{ position:"relative",zIndex:1,textAlign:"center",padding:"2rem",
         opacity: open ? 1 : 0, transform: open ? "translateY(0)" : "translateY(20px)",
         transition:"opacity .8s .6s, transform .8s .6s" }}>
-        <div style={{ fontFamily:"'Cormorant Garamond',serif",fontSize:"clamp(3rem,14vw,5.5rem)",fontStyle:"italic",fontWeight:300,color:"var(--text)",lineHeight:1.1 }}>
-          Adhish<br/>
+        <div style={{ fontFamily:"'Cormorant Garamond',serif",fontSize:"clamp(1.6rem,11vw,4rem)",whiteSpace:"nowrap",fontStyle:"italic",fontWeight:300,color:"var(--text)",lineHeight:1.1 }}>
+          Adhish Bangera<br/>
           <span style={{ fontSize:"clamp(2rem,10vw,4rem)",color:"var(--gold)" }}>&</span><br/>
-          Priya
+          Shanmuka Priya
         </div>
         <p style={{ marginTop:"1.5rem",fontSize:"clamp(0.55rem,2.8vw,.75rem)",letterSpacing:".15em",textTransform:"uppercase",color:"#666",lineHeight:1.9,maxWidth:280 }}>
           We would like to invite you to celebrate with us on the happiest day of our lives. It will be an important moment.

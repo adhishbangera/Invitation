@@ -3,6 +3,7 @@ import CurtainScreen from "./components/Curtain";
 import ScratchScreen from "./components/ScratchCoin";
 import CountdownScreen from "./components/CountDown";
 import DetailsScreen from "./components/Details";
+import Frame from "./components/Frame";
 import Confetti from "./components/Confetti";
 import { GlobalStyle } from "./helper";
 
@@ -16,6 +17,7 @@ const screens = [
 export default function App() {
   const [active, setActive] = useState(0);
   const [coinsDone, setCoinsDone] = useState(false);
+  const [curtainOpen, setCurtainOpen] = useState(false);
   const onCoinsDone = useCallback(() => setCoinsDone(true), []);
   const containerRef = useRef(null);
   const scrolling = useRef(false);
@@ -24,6 +26,12 @@ export default function App() {
     const el = containerRef.current;
     if (!el) return;
     el.scrollTo({ top: i * el.clientHeight, behavior:"smooth" });
+  }, []);
+
+  // Curtain starts opening at 500ms and takes 1.3s; show its border once it is fully open.
+  useEffect(() => {
+    const t = setTimeout(() => setCurtainOpen(true), 1850);
+    return () => clearTimeout(t);
   }, []);
 
   useEffect(() => {
@@ -50,8 +58,9 @@ export default function App() {
             scrollbarWidth:"none",
           }}
         >
-          {screens.map((s) => (
-            <div key={s.id} style={{ height:"100dvh",width:"100%",scrollSnapAlign:"start",flexShrink:0 }}>
+          {screens.map((s, i) => (
+            <div key={s.id} style={{ position:"relative",height:"100dvh",width:"100%",scrollSnapAlign:"start",flexShrink:0 }}>
+              <Frame show={i !== 0 || curtainOpen}/>
               {s.id === "scratch" ? <ScratchScreen onComplete={onCoinsDone}/> : s.comp}
             </div>
           ))}
