@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const COLORS = ["#B3201F", "#D4AF70", "#F5E6C4", "#E8607A", "#8B1A1A", "#C9A24D"];
+const COLORS = ["#B3201F", "#C62828", "#8B1A1A", "#D32F2F"];
 
 // Confetti rains from the top of the screen each time `fire` turns true.
 export default function Confetti({ fire }) {
@@ -23,15 +23,15 @@ export default function Confetti({ fire }) {
     const parts = [];
     const spawn = () => ({
       x: Math.random() * w, y: -20 - Math.random() * 40,
-      vx: (Math.random() - .5) * 2, vy: 2 + Math.random() * 3,
+      vx: (Math.random() - .5) * 2, vy: 3 + Math.random() * 3,
       s: 6 + Math.random() * 6, r: Math.random() * 6, vr: (Math.random() - .5) * .3,
       c: COLORS[(Math.random() * COLORS.length) | 0], round: Math.random() < .3,
       wob: Math.random() * 6,
     });
     const start = performance.now();
     const tick = (now) => {
-      const emitting = now - start < 2500;
-      if (emitting) for (let i = 0; i < 3; i++) parts.push(spawn());
+      const emitting = now - start < 1000;
+      if (emitting) for (let i = 0; i < 2; i++) parts.push(spawn());
       ctx.clearRect(0, 0, w, h);
       for (let i = parts.length - 1; i >= 0; i--) {
         const p = parts[i];
