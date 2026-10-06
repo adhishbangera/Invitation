@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
-export const WEDDING_DATE = new Date("2026-11-22T00:00:00");
+export const WEDDING_DATE = new Date("2026-11-25T11:26:00");
 
 /* ── Google Fonts via @import ── */
 export const GlobalStyle = () => (

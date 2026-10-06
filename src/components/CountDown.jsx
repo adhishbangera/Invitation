@@ -78,7 +78,7 @@ export default function CountdownScreen() {
           ))}
         </div>
         <h3 style={{ fontFamily:"'Cormorant Garamond',serif",fontSize:"clamp(1.1rem,5vw,1.7rem)",fontStyle:"italic",color:"var(--text)",marginTop:".5rem",lineHeight:1.2 }}>Indiana Convention Center</h3>
-        <p style={{ fontSize:".52rem",letterSpacing:".1em",color:"#888",marginTop:".3rem" }}>85B Jeppina Mogaru, NH66 Mangaluru, Karnataka 575002</p>
+        <p style={{ fontSize:".52rem",letterSpacing:".1em",color:"#888",marginTop:".3rem" }}>Jeppina Mogaru, Mangaluru, Karnataka 575002</p>
        <button 
   ref={r5} 
   onClick={() => window.open("https://www.google.com/maps/place/INDIANA+CONVENTION+CENTER/@12.8541128,74.8640793,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba35b9f07ef1f07:0x8fe4cfe13b636e12!8m2!3d12.8541076!4d74.8666542!16s%2Fg%2F11kq9hh4bd?entry=ttu&g_ep=EgoyMDI2MDYyNC4wIKXMDSoASAFQAw%3D%3D", "_blank", "noopener,noreferrer")}
