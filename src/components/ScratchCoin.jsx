@@ -81,7 +81,7 @@ export default function ScratchScreen({ onComplete }) {
       <p ref={r2} style={{ fontSize:".58rem",letterSpacing:".2em",textTransform:"uppercase",color:"#999",marginBottom:".4rem",opacity:v2?1:0,transform:v2?"translateY(0)":"translateY(20px)",transition:"all .7s .1s" }}>Scratch all three coins to continue</p>
       <h2 ref={r3} style={{ fontFamily:"'Cormorant Garamond',serif",fontSize:"clamp(2.5rem,10vw,4rem)",fontStyle:"italic",color:"var(--text)",marginBottom:"2rem",opacity:v3?1:0,transform:v3?"translateY(0)":"translateY(20px)",transition:"all .7s .2s" }}>Reveal</h2>
       <div ref={r4} style={{ display:"flex",gap:"1.5rem",justifyContent:"center",flexWrap:"wrap",opacity:v4?1:0,transform:v4?"translateY(0)":"translateY(20px)",transition:"all .7s .3s" }}>
-        <ScratchCoin label="Day" value="22" onReveal={onReveal}/>
+        <ScratchCoin label="Day" value="25" onReveal={onReveal}/>
         <ScratchCoin label="Month" value="Nov" onReveal={onReveal}/>
         <ScratchCoin label="Year" value="2026" onReveal={onReveal}/>
       </div>
