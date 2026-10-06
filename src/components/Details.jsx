@@ -17,14 +17,14 @@ export default function DetailsScreen() {
         opacity:vis?1:0,transform:vis?"translateY(0)":"translateY(14px)",transition:"all 1s .8s",
       }}>
         <Line size=".6rem" style={{ fontFamily:"'Montserrat',sans-serif",fontStyle:"normal",letterSpacing:".18em",marginBottom:"1.1rem" }}>
-          II Shree Bhagavathi Prasanna II
+          II Shree Vinayaka Prasanna II
         </Line>
 
-        <Line size=".9rem" style={{ fontWeight:600 }}>Smt. Sharmila &amp; Sri Arun Kumar</Line>
-        <Line size=".8rem">Solicit your gracious presence with family &amp; friends on the auspicious occasion of wedding ceremony of our son</Line>
+        {/* <Line size=".9rem" style={{ fontWeight:600 }}>Smt. Sharmila &amp; Sri Arun Kumar</Line> */}
+        <Line size=".8rem">Solicit your gracious presence with family &amp; friends on the auspicious occasion of our wedding ceremony</Line>
 
         <Line size="1.7rem" style={{ fontWeight:600,marginTop:"1.1rem",lineHeight:1.1 }}>Chi. Adhish Bangera</Line>
-        <Line size=".7rem" style={{ fontStyle:"normal" }}>(N/o Suresh Kumar Meramajal)</Line>
+        <Line size=".7rem" style={{ fontStyle:"normal" }}>(S/o Sri Arun Kumar & Smt. Sharmila)</Line>
         <Line size=".85rem" style={{ margin:".5rem 0" }}>with</Line>
         <Line size="1.7rem" style={{ fontWeight:600,lineHeight:1.1 }}>Chi. Sou. Shanmuka Priya</Line>
         <Line size=".7rem" style={{ fontStyle:"normal" }}>(D/o Ganadhipalli Sri Seetharami Reddy &amp; Ganadhipalli Smt. Kalpana Reddy)</Line>
@@ -37,7 +37,7 @@ export default function DetailsScreen() {
           Muhurtham: 11:26 am (Makara Lagnam)
         </div>
 
-        <Line size=".75rem">With best compliments from :<br/>Relatives &amp; Friends</Line>
+        <Line size=".75rem">Together with the blessings of our families</Line>
         <Line size=".75rem" style={{ fontWeight:600,marginTop:".8rem" }}>“Your Presence is the best present”</Line>
       </div>
     </div>

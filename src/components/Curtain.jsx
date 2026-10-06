@@ -63,12 +63,12 @@ export default function CurtainScreen() {
           Shanmuka Priya
         </div>
         <p style={{ marginTop:"1.5rem",fontSize:"clamp(0.55rem,2.8vw,.75rem)",letterSpacing:".15em",textTransform:"uppercase",color:"#666",lineHeight:1.9,maxWidth:280 }}>
-          We would like to invite you to celebrate with us on the happiest day of our lives. It will be an important moment.
+          We would like to invite you to celebrate with us on the happiest day of our lives.
         </p>
       </div>
 
       {/* Scroll hint */}
-      <div style={{ position:"absolute",bottom:"1.5rem",left:"50%",fontSize:".6rem",letterSpacing:".2em",color:"#aaa",textTransform:"uppercase",animation:"bounce 2s infinite",zIndex:10 }}>
+      <div style={{ position:"absolute",bottom:"3.5rem",left:"50%",fontSize:".6rem",letterSpacing:".2em",color:"#aaa",textTransform:"uppercase",animation:"bounce 2s infinite",zIndex:10 }}>
         ↓ scroll
       </div>
     </div>
